@@ -2,7 +2,7 @@
 
 # Design Patterns - Singleton.
 
-O Singleton é um anti-padrão, pois ele resolve dois problemas de uma única vez, violando o princípio
+O Singleton é um **anti-padrão**, pois ele resolve dois problemas de uma única vez, violando o princípio
 da responsabilidade única.
 
 * Ele garante que a classe tenha apenas uma única instância.

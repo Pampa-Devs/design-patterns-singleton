@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Singleton", "DesignPatterns.Singleton\DesignPatterns.Singleton.csproj", "{20051840-8B4F-4096-A310-C2CF3AA640CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Singleton", "DesignPatterns.Singleton\DesignPatterns.Singleton.csproj", "{20051840-8B4F-4096-A310-C2CF3AA640CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Singleton.Tests", "DesignPatterns.Singleton.Tests\DesignPatterns.Singleton.Tests.csproj", "{3DC79E61-533B-46A7-AA93-A3DD9398F036}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{20051840-8B4F-4096-A310-C2CF3AA640CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20051840-8B4F-4096-A310-C2CF3AA640CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20051840-8B4F-4096-A310-C2CF3AA640CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DC79E61-533B-46A7-AA93-A3DD9398F036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DC79E61-533B-46A7-AA93-A3DD9398F036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DC79E61-533B-46A7-AA93-A3DD9398F036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DC79E61-533B-46A7-AA93-A3DD9398F036}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,39 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
 
 namespace DesignPatterns.Singleton
 {
     public class SoundPathProvider
     {
-        #region Singleton
         public readonly Guid Id;
-        private static readonly object _lock = new object();
-
         private SoundPathProvider()
         {
             Id = Guid.NewGuid();
         }
 
-        public static SoundPathProvider _instance;
-        public static SoundPathProvider GetInstance()
+        private static readonly object _lock = new object();
+
+        private static SoundPathProvider _instance;
+        public static SoundPathProvider Instance
         {
-            if (_instance == null)
+            get
             {
-                lock (_lock)
+                lock(_lock)
                 {
                     if (_instance == null)
                     {
                         _instance = new SoundPathProvider();
                     }
                 }
-            }
 
-            return _instance;
+                return _instance;
+            }
         }
-        #endregion
 
         private readonly Dictionary<string, string> _sounds = new Dictionary<string, string>();
 
